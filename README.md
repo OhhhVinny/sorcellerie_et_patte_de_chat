@@ -1,1 +1,1 @@
-# Sorcellerie et pattes de chat
+# Sorcellerie et patte de chat
