@@ -8,17 +8,17 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: GrungeRoofTile_02
-  m_Shader: {fileID: 46, guid: 0000000000000000f000000000000000, type: 0}
+  m_Shader: {fileID: 4800000, guid: 6e4ae4064600d784cac1e41a9e6f2e59, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
-  m_ValidKeywords: []
-  m_InvalidKeywords:
+  m_ValidKeywords:
   - _DISABLE_SSR_TRANSPARENT
   - _NORMALMAP_TANGENT_SPACE
+  m_InvalidKeywords: []
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
+  m_CustomRenderQueue: 2225
   stringTagMap: {}
   disabledShaderPasses:
   - TransparentDepthPrepass
@@ -305,7 +305,7 @@ Material:
     - _Large_FallOff: 44
     - _Large_FallOffDirt: 44.9
     - _Large_Tiling: 0.15
-    - _LinkDetailsWithBase: 1
+    - _LinkDetailsWithBase: 0
     - _MaterialID: 1
     - _Metalic: 1
     - _Metallic: 0
@@ -331,7 +331,7 @@ Material:
     - _RefractionModel: 0
     - _RimPower: 0
     - _Smoothness: 0.5
-    - _SmoothnessRemapMax: 1
+    - _SmoothnessRemapMax: 0.5
     - _SmoothnessRemapMin: 0
     - _SmoothnessSpec: 0.1962713
     - _SmoothnessSpec1: 0.1962713
