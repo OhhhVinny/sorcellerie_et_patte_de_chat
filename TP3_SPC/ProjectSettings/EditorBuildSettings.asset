@@ -6,8 +6,20 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/OutdoorsScene.unity
-    guid: 8124e5870f4fd4c779e7a5f994e84ad1
+    path: Assets/Scenes/menu.unity
+    guid: f2b4b9d283d386549939300df7463bbd
+  - enabled: 1
+    path: Assets/Scenes/mainExterieur.unity
+    guid: 4d75d5479844c2a49a93598891e9aa24
+  - enabled: 1
+    path: Assets/Scenes/mainInterieur.unity
+    guid: 67ebd0b5130f7fe44b491948098858cb
+  - enabled: 1
+    path: Assets/Scenes/Jeremy.unity
+    guid: 98292f9848574214fb3db0a13c1e756f
+  - enabled: 1
+    path: Assets/Scenes/vincent.unity
+    guid: 5fdf2f7c3f1edab4191ffc60190771ce
   m_configObjects:
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 8dd69440e1dfa2543a56581851a5aee3,
       type: 2}
