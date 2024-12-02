@@ -8592,8 +8592,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08c03cf5eea17784c8ff36439e5cafe3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Puzzle1Solved: 1
-  Puzzle2Solved: 1
+  Puzzle1Solved: 0
+  Puzzle2Solved: 0
 --- !u!4 &898705378
 Transform:
   m_ObjectHideFlags: 0
