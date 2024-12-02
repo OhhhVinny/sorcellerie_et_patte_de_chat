@@ -11,6 +11,7 @@ TagManager:
   - vincentEnter
   - jeremyEnter
   - cage
+  - ampouleParcours
   layers:
   - Default
   - TransparentFX
