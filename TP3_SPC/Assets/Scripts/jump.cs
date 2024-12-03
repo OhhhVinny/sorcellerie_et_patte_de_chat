@@ -10,12 +10,15 @@ public class jump : MonoBehaviour
     [SerializeField] private CharacterController joueur;
     [SerializeField] private LayerMask groundLayer;
 
+    public bool ground; 
+
     private float gravity = Physics.gravity.y;
     private Vector3 mouvement;
 
     private void Update()
     {
-        bool _isGrounded = isGrounded(); 
+        bool _isGrounded = isGrounded();
+        ground = _isGrounded; 
 
         if(jumpButton.action.WasPressedThisFrame()&& _isGrounded)
         {
@@ -35,6 +38,6 @@ public class jump : MonoBehaviour
 
     private bool isGrounded()
     {
-        return Physics.CheckSphere(transform.position, 0.2f, groundLayer); 
+        return Physics.CheckSphere(transform.position, 1f, groundLayer); 
     }
 }

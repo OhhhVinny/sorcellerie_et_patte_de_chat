@@ -1041,7 +1041,7 @@ Transform:
   m_GameObject: {fileID: 4975796770410558611}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1.5, z: 0}
+  m_LocalPosition: {x: 0, y: 1, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1133,7 +1133,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_System: {fileID: 126874535497078041}
-  m_MoveSpeed: 3
+  m_MoveSpeed: 2
   m_EnableStrafe: 1
   m_EnableFly: 0
   m_UseGravity: 1
@@ -1206,7 +1206,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_System: {fileID: 126874535497078041}
-  m_TurnAmount: 20
+  m_TurnAmount: 30
   m_DebounceTime: 0.5
   m_EnableTurnLeftRight: 1
   m_EnableTurnAround: 1
@@ -1262,7 +1262,7 @@ MonoBehaviour:
       m_Flags: 0
     m_Reference: {fileID: -5035684217534594597, guid: c348712bda248c246b8c49b3db54643f,
       type: 3}
-  jumpHeight: 1.5
+  jumpHeight: 1
   joueur: {fileID: 981765496569335211}
   groundLayer:
     serializedVersion: 2
@@ -2048,8 +2048,8 @@ MonoBehaviour:
   m_Camera: {fileID: 4671105017179794452}
   m_OriginBaseGameObject: {fileID: 8058718819358752109}
   m_CameraFloorOffsetObject: {fileID: 4975796770410558611}
-  m_RequestedTrackingOriginMode: 0
-  m_CameraYOffset: 1.1176
+  m_RequestedTrackingOriginMode: 1
+  m_CameraYOffset: 1
 --- !u!114 &927366263199004527
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2083,7 +2083,7 @@ CharacterController:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Height: 1.5
+  m_Height: 1
   m_Radius: 0.5
   m_SlopeLimit: 45
   m_StepOffset: 0.3
