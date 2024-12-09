@@ -12,6 +12,7 @@ TagManager:
   - jeremyEnter
   - cage
   - ampouleParcours
+  - Radio
   layers:
   - Default
   - TransparentFX
