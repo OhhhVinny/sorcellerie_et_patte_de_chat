@@ -10412,8 +10412,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08c03cf5eea17784c8ff36439e5cafe3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Puzzle1Solved: 0
-  Puzzle2Solved: 0
+  Puzzle1Solved: 1
+  Puzzle2Solved: 1
 --- !u!4 &898705378
 Transform:
   m_ObjectHideFlags: 0
@@ -10972,6 +10972,33 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 931830948}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &934426389 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1508875744836750, guid: 9846849a9b092a249b3db5e99c418a18,
+    type: 3}
+  m_PrefabInstance: {fileID: 1713881810}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &934426393
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 934426389}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1001 &935113724
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16938,7 +16965,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: afd4ab3e264e7e34bb00bdb7be4d1bb1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cage: {fileID: 1713881815}
+  cage: {fileID: 1713881820}
   textBubble: {fileID: 913097202}
   audioSource: {fileID: 1398200613}
   meow: {fileID: 1398200614}
@@ -20821,9 +20848,13 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 1476505214380356, guid: 9846849a9b092a249b3db5e99c418a18,
         type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1713881815}
+      addedObject: {fileID: 1713881820}
+    - targetCorrespondingSourceObject: {fileID: 1508875744836750, guid: 9846849a9b092a249b3db5e99c418a18,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 934426393}
   m_SourcePrefab: {fileID: 100100000, guid: 9846849a9b092a249b3db5e99c418a18, type: 3}
---- !u!95 &1713881815
+--- !u!95 &1713881820
 Animator:
   serializedVersion: 5
   m_ObjectHideFlags: 0
@@ -26345,10 +26376,7 @@ SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 1493365266}
-  - {fileID: 1441971715}
-  - {fileID: 1713881810}
   - {fileID: 702663361}
-  - {fileID: 99708631}
   - {fileID: 1232113795}
   - {fileID: 1923672243}
   - {fileID: 1563770714}
@@ -26357,8 +26385,11 @@ SceneRoots:
   - {fileID: 1805761003}
   - {fileID: 1105280134}
   - {fileID: 1836179510}
+  - {fileID: 1713881810}
   - {fileID: 898705378}
   - {fileID: 1459673422}
   - {fileID: 913097206}
   - {fileID: 429698689}
   - {fileID: 657972775}
+  - {fileID: 1441971715}
+  - {fileID: 99708631}

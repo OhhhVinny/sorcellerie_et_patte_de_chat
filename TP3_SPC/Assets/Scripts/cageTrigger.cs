@@ -1,6 +1,8 @@
 using UnityEngine;
 using UnityEngine.UI; // Si tu utilises un UI classique
 using TMPro; // Si tu utilises TextMeshPro
+using UnityEngine.SceneManagement;
+using System.Collections;
 
 public class cageTrigger : MonoBehaviour
 {
@@ -31,6 +33,9 @@ public class cageTrigger : MonoBehaviour
             audioSource.Stop();  // Assure que le son ne se joue pas à l'initialisation
             meow.Stop();
         }
+
+    
+    cage.Play("leverCage");
     }
 
     private void OnTriggerEnter(Collider other)
@@ -40,18 +45,33 @@ public class cageTrigger : MonoBehaviour
         {
             if (GameManager.Instance.Puzzle1Solved && GameManager.Instance.Puzzle2Solved)
             {
-                // Si les puzzles sont résolus, lance l'animation
-                cage.Play("leverCage");
-                PlayMeow();  // Joue le son du chat en même temps
+                // Si les puzzles sont résolus, lance l'animation via un Trigger
+                if (cage != null)
+                {
+                    cage.Play("leverCage"); // Assurez-vous d'avoir configuré ce Trigger dans l'Animator
+                    PlayMeow(); // Joue le son du chat en même temps
+                StartCoroutine(LoadSceneWithDelay(0, 2f));
+                }
+                else
+                {
+                    Debug.LogError("L'Animator de la cage n'est pas assigné.");
+                }
             }
             else
             {
                 // Si les puzzles ne sont pas résolus, affiche la bulle de texte
                 ShowTextBubble(true);
                 PlaySound();  // Joue le son associé à la bulle
+                PlayMeow();
             }
         }
     }
+    // Coroutine pour charger la scène avec un délai
+IEnumerator LoadSceneWithDelay(int sceneIndex, float delay)
+{
+    yield return new WaitForSeconds(delay);
+    SceneManager.LoadScene(sceneIndex);
+}
 
     private void OnTriggerExit(Collider other)
     {

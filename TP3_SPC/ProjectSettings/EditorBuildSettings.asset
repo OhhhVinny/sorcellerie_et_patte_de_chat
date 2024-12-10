@@ -15,8 +15,8 @@ EditorBuildSettings:
     path: Assets/Scenes/mainInterieur.unity
     guid: 67ebd0b5130f7fe44b491948098858cb
   - enabled: 1
-    path: Assets/Scenes/Jeremy.unity
-    guid: 98292f9848574214fb3db0a13c1e756f
+    path: Assets/Scenes/Jeremy1.unity
+    guid: 818d4692ce070a04284f8bdbfd85a703
   - enabled: 1
     path: Assets/Scenes/vincent.unity
     guid: 5fdf2f7c3f1edab4191ffc60190771ce

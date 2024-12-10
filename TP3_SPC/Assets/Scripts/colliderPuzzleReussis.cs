@@ -12,14 +12,15 @@ public class ColliderPuzzleReussis : MonoBehaviour
         // Vérifie si c'est le joueur qui entre dans le collider
         if (other.CompareTag("Player"))
         {
-            // Met à jour l'état du puzzle dans le GameManager
-            if (puzzleID == 1) GameManager.Instance.Puzzle1Solved = true;
-            else if (puzzleID == 2) GameManager.Instance.Puzzle2Solved = true;
-
-            // Retourne à la scène principale
-            SceneManager.LoadScene("mainInterieur");
+            if (puzzleID == 1 && GameManager.Instance.Puzzle1Solved)
+            {
+                SceneManager.LoadScene("mainInterieur");
+            }
+            else if (puzzleID == 2 && GameManager.Instance.Puzzle2Solved)
+            {
+                SceneManager.LoadScene("mainInterieur");
+            }
         }
     }
-
 }
 

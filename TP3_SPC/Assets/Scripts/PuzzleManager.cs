@@ -6,7 +6,6 @@ public class PuzzleManager : MonoBehaviour
     public AudioClip[] puzzleSounds;
     public AudioClip successSound;
     public AudioClip puzzleCompleteSound;
-    public Transform teleportPoint;
 
     private AudioSource audioSource;
     private int currentSoundIndex = 0;
@@ -73,19 +72,13 @@ public class PuzzleManager : MonoBehaviour
     {
         Debug.Log("Puzzle Complete!");
         audioSource.PlayOneShot(puzzleCompleteSound);
-        TeleportPlayer();
         puzzleStarted = false;
         canFindObject = false;
+
+// Marque le puzzle 2 comme résolu dans le GameManager
+        GameManager.Instance.Puzzle2Solved = true;
     }
 
-    private void TeleportPlayer()
-    {
-        GameObject player = GameObject.FindWithTag("Player");
-        if (player != null)
-        {
-            player.transform.position = teleportPoint.position;
-        }
-    }
 
     private void ResetRadioTrigger()
     {
