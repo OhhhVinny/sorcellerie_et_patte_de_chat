@@ -9,18 +9,28 @@ public class ColliderPuzzleReussis : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        // Vérifie si c'est le joueur qui entre dans le collider
+        Debug.Log($"Trigger Entered by: {other.name}");
+
         if (other.CompareTag("Player"))
         {
-            if (puzzleID == 1 && GameManager.Instance.Puzzle1Solved)
+            Debug.Log($"Puzzle ID: {puzzleID}");
+
+            if (puzzleID == 1 && GameManager.Instance.Puzzle1Solved == false)
             {
-                SceneManager.LoadScene("mainInterieur");
+                GameManager.Instance.Puzzle1Solved = true;
+                            
+                    Debug.Log("Puzzle1Solved state set to true in GameManager");
+                    SceneManager.LoadScene("mainInterieur");
+
             }
+
             else if (puzzleID == 2 && GameManager.Instance.Puzzle2Solved)
             {
+                Debug.Log("Puzzle 2 solved, loading mainInterieur");
                 SceneManager.LoadScene("mainInterieur");
             }
         }
     }
+
 }
 

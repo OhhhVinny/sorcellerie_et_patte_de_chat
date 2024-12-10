@@ -11,18 +11,19 @@ public class GameManager : MonoBehaviour
     public bool Puzzle1Solved = false;
     public bool Puzzle2Solved = false;
 
-    private void Awake()
+private void Awake()
+{
+    if (Instance == null)
     {
-        // Créer un singleton
-        if (Instance == null)
-        {
-            Instance = this;
-            DontDestroyOnLoad(gameObject);
-        }
-        else
-        {
-            Destroy(gameObject);
-        }
+        Instance = this;
+        DontDestroyOnLoad(gameObject);
+        Debug.Log("GameManager instance created");
     }
+    else
+    {
+        Debug.LogWarning("Duplicate GameManager instance destroyed");
+        Destroy(gameObject);
+    }
+}
 }
 
